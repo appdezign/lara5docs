@@ -8,8 +8,20 @@
 Definition
 ================================
 
-An *entity* in Lara5 is basically a content type, but it is not restricted to
-content types such as page, blog, or event, but also
+An *entity* in Lara5 is basically a information type,
+but it is not restricted to content types such as page, blog, or event,
+but tags, menus and users are also considered emtities.
+
+
+Concept
+================================
+
+Lara5 was built to be able to create new content types from the backend,
+without the need to manually add models, controllers, database tables, etc.
+
+
+Builder
+================================
 
 
 Entity Groups
