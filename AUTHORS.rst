@@ -1,6 +1,6 @@
 Authors
 -------
 
-* S. Hoeksma
+* Sybrand Hoeksma
 
 
