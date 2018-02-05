@@ -1,4 +1,4 @@
-2. Authors
+Authors
 -------
 
 * Sybrand Hoeksma
