@@ -35,6 +35,10 @@ Examples:
 | GET     | /nl/myteam/john-doe        | ``entity.team.index.show``        |
 +---------+----------------------------+-----------------------------------+
 
+.. Note:: the Route name for the *show* method also contains the method of the parent,
+so we can always naviage back to *list view* we came from (master/detail)
+
+
 
 Menu Pages
 --------------------------------
