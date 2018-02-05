@@ -127,7 +127,7 @@ get all the standard resource routes:
 | DELETE     | /admin/team/{team}         | destroy         | ``admin.team.destroy``         |
 +------------+----------------------------+-----------------+--------------------------------+
 
-In addition to the standard resource routes,
+In addition to the *standard* resource routes,
 we add as few extra routes for these entities:
 
 +------------+----------------------------+-----------------+--------------------------------+
@@ -138,5 +138,7 @@ we add as few extra routes for these entities:
 | GET        | /admin/team/reorder        | reorder         | ``admin.team.reorder``         |
 +------------+----------------------------+-----------------+--------------------------------+
 | POST       | /admin/team/savereorder    | savereorder     | ``admin.team.savereorder``     |
++------------+----------------------------+-----------------+--------------------------------+
+| POST       | /admin/team/batch          | batch           | ``admin.team.batch``           |
 +------------+----------------------------+-----------------+--------------------------------+
 
