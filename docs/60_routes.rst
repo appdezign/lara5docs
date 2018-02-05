@@ -54,7 +54,7 @@ Examples:
 +=========+=======================+==============================+
 | get     | /nl/subscribe         | ``form.newsletter.form``     |
 +---------+-----------------------+------------------------------+
-| post    | /nl/ajax/subscribe    | ajax.newsletter.process      |
+| post    | /nl/ajax/subscribe    | ``ajax.newsletter.process``  |
 +---------+-----------------------+------------------------------+
 
 
