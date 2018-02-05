@@ -2,6 +2,9 @@
  Routes
 ================================
 
+.. contents:: Table of Contents
+.. section-numbering::
+
 
 Frontend
 ================================
