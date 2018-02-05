@@ -1,5 +1,5 @@
 ========
-1. Routes
+Routes
 ========
 
 Test::
