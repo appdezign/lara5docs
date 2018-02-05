@@ -8,7 +8,7 @@
 Frontend
 ================================
 
-SPECIAL
+Special
 --------------------------------
 
 Examples:
@@ -20,7 +20,7 @@ Examples:
 - rname:     special.search.form
 
 
-MENU ENTITIES
+Menu Entities
 --------------------------------
 
 Examples:
@@ -32,7 +32,7 @@ Examples:
 - rname:     entity.team.index.show
 
 
-MENU PAGES
+Menu Pages
 --------------------------------
 
 Examples:
@@ -44,7 +44,7 @@ The page ID is added in the NAMED ROUTE
 because we do not have the actual Page slug in the menu route itself
 
 
-MENU FORMS
+Memu Forms
 --------------------------------
 
 Examples:
@@ -59,7 +59,7 @@ Examples:
 
 
 
-FIXED ENTITIES
+Fixed Entities
 --------------------------------
 
 Examples:
@@ -74,7 +74,7 @@ Using a fixed prefix ('content'), we can reach all entities and entity objects
 without using the user-defined menu
 
 
-CATCH ALL
+Catch All
 --------------------------------
 
 - get:       /nl/whatever
