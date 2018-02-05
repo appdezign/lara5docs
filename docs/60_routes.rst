@@ -14,11 +14,11 @@ Special
 Examples:
 
 +---------+----------------------------+-----------------------------------+
-| Type    | Uri                        | Route name                        |
+| Verb    | Uri                        | Route name                        |
 +=========+============================+===================================+
-| get     | /nl/                       | ``special.home.show``             |
+| GET     | /nl/                       | ``special.home.show``             |
 +---------+----------------------------+-----------------------------------+
-| get     | /nl/search                 | ``special.search.form``           |
+| GET     | /nl/search                 | ``special.search.form``           |
 +---------+----------------------------+-----------------------------------+
 
 
@@ -28,11 +28,11 @@ Menu Entities
 Examples:
 
 +---------+----------------------------+-----------------------------------+
-| Type    | Uri                        | Route name                        |
+| Verb    | Uri                        | Route name                        |
 +=========+============================+===================================+
-| get     | /nl/myteam                 | ``entity.team.index``             |
+| GET     | /nl/myteam                 | ``entity.team.index``             |
 +---------+----------------------------+-----------------------------------+
-| get     | /nl/myteam/john-doe        | ``entity.team.index.show``        |
+| GET     | /nl/myteam/john-doe        | ``entity.team.index.show``        |
 +---------+----------------------------+-----------------------------------+
 
 
@@ -42,11 +42,11 @@ Menu Pages
 Examples:
 
 +---------+----------------------------+-----------------------------------+
-| Type    | Uri                        | Route name                        |
+| Verb    | Uri                        | Route name                        |
 +=========+============================+===================================+
-| get     | /nl/about                  | ``entity.page.show.123``          |
+| GET     | /nl/about                  | ``entity.page.show.123``          |
 +---------+----------------------------+-----------------------------------+
-| get     | /nl/info                   | ``entity.page.show.456``          |
+| GET     | /nl/info                   | ``entity.page.show.456``          |
 +---------+----------------------------+-----------------------------------+
 
 The page ID is added in the *named route*
@@ -59,9 +59,9 @@ Menu Forms
 Examples:
 
 +---------+----------------------------+-----------------------------------+
-| Type    | Uri                        | Route name                        |
+| Verb    | Uri                        | Route name                        |
 +=========+============================+===================================+
-| get     | /nl/subscribe              | ``form.newsletter.form``          |
+| GET     | /nl/subscribe              | ``form.newsletter.form``          |
 +---------+----------------------------+-----------------------------------+
 | post    | /nl/ajax/subscribe         | ``ajax.newsletter.process``       |
 +---------+----------------------------+-----------------------------------+
@@ -74,11 +74,11 @@ Fixed Entities
 Examples:
 
 +---------+----------------------------+-----------------------------------+
-| Type    | Uri                        | Route name                        |
+| Verb    | Uri                        | Route name                        |
 +=========+============================+===================================+
-| get     | /nl/content/team           | ``content.team.index``            |
+| GET     | /nl/content/team           | ``content.team.index``            |
 +---------+----------------------------+-----------------------------------+
-| get     | /nl/content/team/john-doe  | ``content.team.index.show``       |
+| GET     | /nl/content/team/john-doe  | ``content.team.index.show``       |
 +---------+----------------------------+-----------------------------------+
 
 Using a fixed prefix ('content'), we can call all entities and entity objects
@@ -89,11 +89,11 @@ Catch All
 --------------------------------
 
 +---------+----------------------------+-----------------------------------+
-| Type    | Uri                        | Route name                        |
+| Verb    | Uri                        | Route name                        |
 +=========+============================+===================================+
-| get     | /nl/whatever               | ``(none)``                        |
+| GET     | /nl/whatever               | ``(none)``                        |
 +---------+----------------------------+-----------------------------------+
-| get     | /nl/folder                 | ``(none)``                        |
+| GET     | /nl/folder                 | ``(none)``                        |
 +---------+----------------------------+-----------------------------------+
 
 Find menu folders and pages that ar not in the menu (orphans)
@@ -102,3 +102,26 @@ Find menu folders and pages that ar not in the menu (orphans)
 
 Backend
 ================================
+
+Entity Resource Routes
+--------------------------------
+
+All entities that have the option *resource_routes = 1* in the database
+get the standard resource routes:
+
++------------+-------------------------+---------------+---------------------------+
+| Verb       | Uri                     | Action        | Route name                |
++============+=========================+===============+===========================+
+| GET        | /admin/team             | index         | ``admin.team.index``      |
++------------+-------------------------+---------------+---------------------------+
+| GET        | /admin/team/create      | create        | ``admin.team.create``     |
++------------+-------------------------+---------------+---------------------------+
+| POST       | /admin/team             | store         | ``admin.team.store``      |
++------------+-------------------------+---------------+---------------------------+
+| GET        | /admin/team/{team}      | show          | ``admin.team.show``       |
++------------+-------------------------+---------------+---------------------------+
+| PUT/PATCH  | /admin/team/{team}      | update        | ``admin.team.update``     |
++------------+-------------------------+---------------+---------------------------+
+| DELETE     | /admin/team/{team}      | destroy       | ``admin.team.destroy``    |
++------------+-------------------------+---------------+---------------------------+
+
