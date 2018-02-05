@@ -106,8 +106,8 @@ Backend
 Entity Resource Routes
 --------------------------------
 
-All entities that have the option *resource_routes = 1* in the database
-get the standard resource routes:
+All entities that have the option *resource_routes* in the database
+get all the standard resource routes:
 
 +------------+-------------------------+---------------+---------------------------+
 | Verb       | Uri                     | Action        | Route name                |
