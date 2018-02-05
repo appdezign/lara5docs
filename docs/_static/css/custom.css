@@ -2,7 +2,11 @@ code, .rst-content code {
 	font-size: 90%;
 }
 
-.rst-content h1 {
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
+}
+
+.rst-content h1 a.toc-backref {
 	color: #3c5064;
 }
 
