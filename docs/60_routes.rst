@@ -13,11 +13,13 @@ Special
 
 Examples:
 
-- get:       /nl/
-- rname:     special.home.show
-
-- get:       /nl/search
-- rname:     special.search.form
++---------+-----------------------+------------------------------+
+| Type    | Uri                   | Route name                   |
++=========+=======================+==============================+
+| get     | /nl/                  | ``special.home.show``        |
++---------+-----------------------+------------------------------+
+| get     | /nl/search            | ``special.search.form``      |
++---------+-----------------------+------------------------------+
 
 
 Menu Entities
@@ -44,7 +46,7 @@ The page ID is added in the NAMED ROUTE
 because we do not have the actual Page slug in the menu route itself
 
 
-Memu Forms
+Menu Forms
 --------------------------------
 
 Examples:
