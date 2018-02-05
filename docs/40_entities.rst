@@ -3,7 +3,6 @@
 ================================
 
 .. contents:: Table of Contents
-.. section-numbering::
 
 Entity Groups
 ================================
@@ -44,3 +43,6 @@ System
 Entity Settings
 ================================
 
+
+Entity Options
+================================
