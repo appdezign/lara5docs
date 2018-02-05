@@ -50,11 +50,14 @@ MENU FORMS
 
 Examples:
 
-- get:       /nl/subscribe
-- rname:     form.newsletter.form
++---------+-----------------------+------------------------------+
+| Type    | Uri                   | Route name                   |
++=================================+==============================+
+| get     | /nl/subscribe         | form.newsletter.form         |
++---------+-----------------------+------------------------------+
+| post    | /nl/ajax/subscribe    | ajax.newsletter.process      |
++---------+-----------------------+------------------------------+
 
-- post:      /nl/ajax/subscribe
-- rname:     ajax.newsletter.process
 
 
 FIXED ENTITIES
