@@ -36,7 +36,8 @@ Examples:
 +---------+----------------------------+-----------------------------------+
 
 .. Note:: the Route name for the *show* method also contains the method of the parent,
-so we can always naviage back to *list view* we came from (master/detail)
+so we can always naviage back to *list view* we came from (master/detail).
+This is usefull if we have multiple list views for the same entity (blog/latest, blog/archive).
 
 
 
