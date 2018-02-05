@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Read the Docs Template documentation build configuration file, created by
+# Lara5 Docs documentation build configuration file, created by
 # sphinx-quickstart on Tue Aug 26 14:19:49 2014.
 #
 # This file is execfile()d with the current directory set to its
