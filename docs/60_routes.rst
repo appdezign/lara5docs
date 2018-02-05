@@ -13,13 +13,13 @@ Special
 
 Examples:
 
-+---------+-----------------------+------------------------------+
-| Type    | Uri                   | Route name                   |
-+=========+=======================+==============================+
-| get     | /nl/                  | ``special.home.show``        |
-+---------+-----------------------+------------------------------+
-| get     | /nl/search            | ``special.search.form``      |
-+---------+-----------------------+------------------------------+
++---------+----------------------------+-----------------------------------+
+| Type    | Uri                        | Route name                        |
++=========+============================+===================================+
+| get     | /nl/                       | ``special.home.show``             |
++---------+----------------------------+-----------------------------------+
+| get     | /nl/search                 | ``special.search.form``           |
++---------+----------------------------+-----------------------------------+
 
 
 Menu Entities
@@ -27,11 +27,13 @@ Menu Entities
 
 Examples:
 
-- get:       /nl/myteam
-- rname:     entity.team.index
-
-- get:       /nl/myteam/john-doe
-- rname:     entity.team.index.show
++---------+----------------------------+-----------------------------------+
+| Type    | Uri                        | Route name                        |
++=========+============================+===================================+
+| get     | /nl/myteam                 | ``entity.team.index``             |
++---------+----------------------------+-----------------------------------+
+| get     | /nl/myteam/john-doe        | ``entity.team.index.show``        |
++---------+----------------------------+-----------------------------------+
 
 
 Menu Pages
@@ -39,11 +41,16 @@ Menu Pages
 
 Examples:
 
-- get:       /nl/about
-- rname:     entity.page.show.123
++---------+----------------------------+-----------------------------------+
+| Type    | Uri                        | Route name                        |
++=========+============================+===================================+
+| get     | /nl/about                  | ``entity.page.show.123``          |
++---------+----------------------------+-----------------------------------+
+| get     | /nl/info                   | ``entity.page.show.456``          |
++---------+----------------------------+-----------------------------------+
 
-The page ID is added in the NAMED ROUTE
-because we do not have the actual Page slug in the menu route itself
+The page ID is added in the *named route*
+because we do not have the actual *page slug* in the uri itself
 
 
 Menu Forms
@@ -51,13 +58,13 @@ Menu Forms
 
 Examples:
 
-+---------+-----------------------+------------------------------+
-| Type    | Uri                   | Route name                   |
-+=========+=======================+==============================+
-| get     | /nl/subscribe         | ``form.newsletter.form``     |
-+---------+-----------------------+------------------------------+
-| post    | /nl/ajax/subscribe    | ``ajax.newsletter.process``  |
-+---------+-----------------------+------------------------------+
++---------+----------------------------+-----------------------------------+
+| Type    | Uri                        | Route name                        |
++=========+============================+===================================+
+| get     | /nl/subscribe              | ``form.newsletter.form``          |
++---------+----------------------------+-----------------------------------+
+| post    | /nl/ajax/subscribe         | ``ajax.newsletter.process``       |
++---------+----------------------------+-----------------------------------+
 
 
 
@@ -66,13 +73,15 @@ Fixed Entities
 
 Examples:
 
-- get:       /nl/content/team
-- rname:     content.team.index
++---------+----------------------------+-----------------------------------+
+| Type    | Uri                        | Route name                        |
++=========+============================+===================================+
+| get     | /nl/content/team           | ``content.team.index``            |
++---------+----------------------------+-----------------------------------+
+| get     | /nl/content/team/john-doe  | ``content.team.index.show``       |
++---------+----------------------------+-----------------------------------+
 
-- get:       /nl/content/team/john-doe
-- rname:     content.team.index.show
-
-Using a fixed prefix ('content'), we can reach all entities and entity objects
+Using a fixed prefix ('content'), we can call all entities and entity objects
 without using the user-defined menu
 
 
